@@ -98,12 +98,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.checkBoxLoop = new System.Windows.Forms.CheckBox();
+            this.checkBoxAutoPlay = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numericUpDownAutoPlay = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFileProgress)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAutoPlay)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,7 +125,7 @@
             this.comboBoxOutputDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxOutputDevices.FormattingEnabled = true;
             this.comboBoxOutputDevices.Location = new System.Drawing.Point(21, 37);
-            this.comboBoxOutputDevices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxOutputDevices.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxOutputDevices.Name = "comboBoxOutputDevices";
             this.comboBoxOutputDevices.Size = new System.Drawing.Size(343, 24);
             this.comboBoxOutputDevices.TabIndex = 1;
@@ -134,7 +138,7 @@
             this.buttonRefreshDevices.ImageIndex = 0;
             this.buttonRefreshDevices.ImageList = this.imageList1;
             this.buttonRefreshDevices.Location = new System.Drawing.Point(979, 31);
-            this.buttonRefreshDevices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRefreshDevices.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRefreshDevices.Name = "buttonRefreshDevices";
             this.buttonRefreshDevices.Size = new System.Drawing.Size(33, 31);
             this.buttonRefreshDevices.TabIndex = 2;
@@ -166,7 +170,7 @@
             this.buttonSaveConfig.ImageIndex = 1;
             this.buttonSaveConfig.ImageList = this.imageList1;
             this.buttonSaveConfig.Location = new System.Drawing.Point(1020, 31);
-            this.buttonSaveConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSaveConfig.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSaveConfig.Name = "buttonSaveConfig";
             this.buttonSaveConfig.Size = new System.Drawing.Size(35, 32);
             this.buttonSaveConfig.TabIndex = 3;
@@ -201,9 +205,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.listBoxPlayList);
             this.groupBox1.Location = new System.Drawing.Point(21, 70);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(549, 433);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -216,7 +220,7 @@
             this.buttonMoveU.ImageIndex = 12;
             this.buttonMoveU.ImageList = this.imageList1;
             this.buttonMoveU.Location = new System.Drawing.Point(232, 16);
-            this.buttonMoveU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonMoveU.Margin = new System.Windows.Forms.Padding(4);
             this.buttonMoveU.Name = "buttonMoveU";
             this.buttonMoveU.Size = new System.Drawing.Size(35, 32);
             this.buttonMoveU.TabIndex = 10;
@@ -230,7 +234,7 @@
             this.buttonDown.ImageIndex = 11;
             this.buttonDown.ImageList = this.imageList1;
             this.buttonDown.Location = new System.Drawing.Point(189, 16);
-            this.buttonDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDown.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(35, 32);
             this.buttonDown.TabIndex = 9;
@@ -244,7 +248,7 @@
             this.buttonDeleteFromPlaylist.ImageIndex = 10;
             this.buttonDeleteFromPlaylist.ImageList = this.imageList1;
             this.buttonDeleteFromPlaylist.Location = new System.Drawing.Point(336, 16);
-            this.buttonDeleteFromPlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDeleteFromPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDeleteFromPlaylist.Name = "buttonDeleteFromPlaylist";
             this.buttonDeleteFromPlaylist.Size = new System.Drawing.Size(35, 32);
             this.buttonDeleteFromPlaylist.TabIndex = 8;
@@ -258,7 +262,7 @@
             this.buttonAddFileToPlaylist.ImageIndex = 2;
             this.buttonAddFileToPlaylist.ImageList = this.imageList1;
             this.buttonAddFileToPlaylist.Location = new System.Drawing.Point(379, 16);
-            this.buttonAddFileToPlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddFileToPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddFileToPlaylist.Name = "buttonAddFileToPlaylist";
             this.buttonAddFileToPlaylist.Size = new System.Drawing.Size(35, 32);
             this.buttonAddFileToPlaylist.TabIndex = 7;
@@ -272,7 +276,7 @@
             this.buttonOpenPlaylist.ImageIndex = 3;
             this.buttonOpenPlaylist.ImageList = this.imageList1;
             this.buttonOpenPlaylist.Location = new System.Drawing.Point(421, 16);
-            this.buttonOpenPlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOpenPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpenPlaylist.Name = "buttonOpenPlaylist";
             this.buttonOpenPlaylist.Size = new System.Drawing.Size(35, 32);
             this.buttonOpenPlaylist.TabIndex = 6;
@@ -286,7 +290,7 @@
             this.buttonSavePlaylistAs.ImageIndex = 4;
             this.buttonSavePlaylistAs.ImageList = this.imageList1;
             this.buttonSavePlaylistAs.Location = new System.Drawing.Point(464, 16);
-            this.buttonSavePlaylistAs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSavePlaylistAs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSavePlaylistAs.Name = "buttonSavePlaylistAs";
             this.buttonSavePlaylistAs.Size = new System.Drawing.Size(35, 32);
             this.buttonSavePlaylistAs.TabIndex = 5;
@@ -300,7 +304,7 @@
             this.buttonSavePlaylist.ImageIndex = 1;
             this.buttonSavePlaylist.ImageList = this.imageList1;
             this.buttonSavePlaylist.Location = new System.Drawing.Point(507, 16);
-            this.buttonSavePlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSavePlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSavePlaylist.Name = "buttonSavePlaylist";
             this.buttonSavePlaylist.Size = new System.Drawing.Size(35, 32);
             this.buttonSavePlaylist.TabIndex = 4;
@@ -312,7 +316,7 @@
             this.textBoxPlaylistName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPlaylistName.Location = new System.Drawing.Point(8, 55);
-            this.textBoxPlaylistName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPlaylistName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPlaylistName.Name = "textBoxPlaylistName";
             this.textBoxPlaylistName.Size = new System.Drawing.Size(532, 22);
             this.textBoxPlaylistName.TabIndex = 2;
@@ -336,7 +340,7 @@
             this.listBoxPlayList.FormattingEnabled = true;
             this.listBoxPlayList.ItemHeight = 16;
             this.listBoxPlayList.Location = new System.Drawing.Point(8, 87);
-            this.listBoxPlayList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxPlayList.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPlayList.Name = "listBoxPlayList";
             this.listBoxPlayList.Size = new System.Drawing.Size(532, 324);
             this.listBoxPlayList.TabIndex = 0;
@@ -376,9 +380,9 @@
             this.groupBox2.Controls.Add(this.buttonStop);
             this.groupBox2.Controls.Add(this.buttonPlay);
             this.groupBox2.Location = new System.Drawing.Point(21, 511);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(549, 119);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
@@ -386,7 +390,7 @@
             // textBoxMidiControlForth
             // 
             this.textBoxMidiControlForth.Location = new System.Drawing.Point(473, 87);
-            this.textBoxMidiControlForth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlForth.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlForth.Name = "textBoxMidiControlForth";
             this.textBoxMidiControlForth.Size = new System.Drawing.Size(63, 22);
             this.textBoxMidiControlForth.TabIndex = 14;
@@ -395,7 +399,7 @@
             // textBoxMidiControlBack
             // 
             this.textBoxMidiControlBack.Location = new System.Drawing.Point(401, 87);
-            this.textBoxMidiControlBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlBack.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlBack.Name = "textBoxMidiControlBack";
             this.textBoxMidiControlBack.Size = new System.Drawing.Size(63, 22);
             this.textBoxMidiControlBack.TabIndex = 13;
@@ -404,7 +408,7 @@
             // textBoxMidiControlPause
             // 
             this.textBoxMidiControlPause.Location = new System.Drawing.Point(160, 87);
-            this.textBoxMidiControlPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlPause.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlPause.Name = "textBoxMidiControlPause";
             this.textBoxMidiControlPause.Size = new System.Drawing.Size(63, 22);
             this.textBoxMidiControlPause.TabIndex = 12;
@@ -413,7 +417,7 @@
             // textBoxMidiControlStop
             // 
             this.textBoxMidiControlStop.Location = new System.Drawing.Point(88, 87);
-            this.textBoxMidiControlStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlStop.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlStop.Name = "textBoxMidiControlStop";
             this.textBoxMidiControlStop.Size = new System.Drawing.Size(63, 22);
             this.textBoxMidiControlStop.TabIndex = 11;
@@ -422,7 +426,7 @@
             // textBoxMidiControlPlay
             // 
             this.textBoxMidiControlPlay.Location = new System.Drawing.Point(16, 87);
-            this.textBoxMidiControlPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlPlay.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlPlay.Name = "textBoxMidiControlPlay";
             this.textBoxMidiControlPlay.Size = new System.Drawing.Size(63, 22);
             this.textBoxMidiControlPlay.TabIndex = 10;
@@ -435,7 +439,7 @@
             this.buttonRewind.ImageIndex = 9;
             this.buttonRewind.ImageList = this.imageList1;
             this.buttonRewind.Location = new System.Drawing.Point(401, 21);
-            this.buttonRewind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRewind.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRewind.Name = "buttonRewind";
             this.buttonRewind.Size = new System.Drawing.Size(64, 58);
             this.buttonRewind.TabIndex = 9;
@@ -449,7 +453,7 @@
             this.buttonForward.ImageIndex = 8;
             this.buttonForward.ImageList = this.imageList1;
             this.buttonForward.Location = new System.Drawing.Point(473, 21);
-            this.buttonForward.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonForward.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForward.Name = "buttonForward";
             this.buttonForward.Size = new System.Drawing.Size(64, 58);
             this.buttonForward.TabIndex = 8;
@@ -462,7 +466,7 @@
             this.buttonPause.ImageIndex = 5;
             this.buttonPause.ImageList = this.imageList1;
             this.buttonPause.Location = new System.Drawing.Point(160, 21);
-            this.buttonPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPause.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.Size = new System.Drawing.Size(64, 58);
             this.buttonPause.TabIndex = 7;
@@ -475,7 +479,7 @@
             this.buttonStop.ImageIndex = 7;
             this.buttonStop.ImageList = this.imageList1;
             this.buttonStop.Location = new System.Drawing.Point(88, 21);
-            this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(64, 58);
             this.buttonStop.TabIndex = 6;
@@ -488,7 +492,7 @@
             this.buttonPlay.ImageIndex = 6;
             this.buttonPlay.ImageList = this.imageList1;
             this.buttonPlay.Location = new System.Drawing.Point(16, 21);
-            this.buttonPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPlay.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(64, 58);
             this.buttonPlay.TabIndex = 5;
@@ -500,7 +504,7 @@
             this.trackBarVolume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBarVolume.Location = new System.Drawing.Point(575, 113);
-            this.trackBarVolume.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trackBarVolume.Margin = new System.Windows.Forms.Padding(4);
             this.trackBarVolume.Maximum = 100;
             this.trackBarVolume.Name = "trackBarVolume";
             this.trackBarVolume.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -513,7 +517,7 @@
             // 
             this.trackBarFileProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBarFileProgress.Location = new System.Drawing.Point(609, 114);
-            this.trackBarFileProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trackBarFileProgress.Margin = new System.Windows.Forms.Padding(4);
             this.trackBarFileProgress.Maximum = 100;
             this.trackBarFileProgress.Name = "trackBarFileProgress";
             this.trackBarFileProgress.Size = new System.Drawing.Size(445, 56);
@@ -566,7 +570,7 @@
             this.labelAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAutoPlay.AutoSize = true;
             this.labelAutoPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAutoPlay.Location = new System.Drawing.Point(1020, 603);
+            this.labelAutoPlay.Location = new System.Drawing.Point(1026, 582);
             this.labelAutoPlay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAutoPlay.Name = "labelAutoPlay";
             this.labelAutoPlay.Size = new System.Drawing.Size(28, 29);
@@ -581,9 +585,9 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.panel1);
             this.groupBox3.Location = new System.Drawing.Point(625, 364);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(429, 214);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
@@ -592,7 +596,7 @@
             // panelMidiLed
             // 
             this.panelMidiLed.Location = new System.Drawing.Point(8, 165);
-            this.panelMidiLed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMidiLed.Margin = new System.Windows.Forms.Padding(4);
             this.panelMidiLed.Name = "panelMidiLed";
             this.panelMidiLed.Size = new System.Drawing.Size(36, 34);
             this.panelMidiLed.TabIndex = 2;
@@ -627,7 +631,7 @@
             this.panel1.Controls.Add(this.checkBoxMidiChannel2);
             this.panel1.Controls.Add(this.checkBoxMidiChannel1);
             this.panel1.Location = new System.Drawing.Point(8, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 118);
             this.panel1.TabIndex = 0;
@@ -639,7 +643,7 @@
             this.checkBoxMidiChannel16.Checked = true;
             this.checkBoxMidiChannel16.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel16.Location = new System.Drawing.Point(344, 64);
-            this.checkBoxMidiChannel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel16.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel16.Name = "checkBoxMidiChannel16";
             this.checkBoxMidiChannel16.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel16.TabIndex = 15;
@@ -654,7 +658,7 @@
             this.checkBoxMidiChannel15.Checked = true;
             this.checkBoxMidiChannel15.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel15.Location = new System.Drawing.Point(299, 64);
-            this.checkBoxMidiChannel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel15.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel15.Name = "checkBoxMidiChannel15";
             this.checkBoxMidiChannel15.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel15.TabIndex = 14;
@@ -669,7 +673,7 @@
             this.checkBoxMidiChannel14.Checked = true;
             this.checkBoxMidiChannel14.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel14.Location = new System.Drawing.Point(253, 64);
-            this.checkBoxMidiChannel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel14.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel14.Name = "checkBoxMidiChannel14";
             this.checkBoxMidiChannel14.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel14.TabIndex = 13;
@@ -684,7 +688,7 @@
             this.checkBoxMidiChannel13.Checked = true;
             this.checkBoxMidiChannel13.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel13.Location = new System.Drawing.Point(208, 64);
-            this.checkBoxMidiChannel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel13.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel13.Name = "checkBoxMidiChannel13";
             this.checkBoxMidiChannel13.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel13.TabIndex = 12;
@@ -699,7 +703,7 @@
             this.checkBoxMidiChannel12.Checked = true;
             this.checkBoxMidiChannel12.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel12.Location = new System.Drawing.Point(163, 64);
-            this.checkBoxMidiChannel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel12.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel12.Name = "checkBoxMidiChannel12";
             this.checkBoxMidiChannel12.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel12.TabIndex = 11;
@@ -714,7 +718,7 @@
             this.checkBoxMidiChannel11.Checked = true;
             this.checkBoxMidiChannel11.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel11.Location = new System.Drawing.Point(117, 64);
-            this.checkBoxMidiChannel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel11.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel11.Name = "checkBoxMidiChannel11";
             this.checkBoxMidiChannel11.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel11.TabIndex = 10;
@@ -729,7 +733,7 @@
             this.checkBoxMidiChannel10.Checked = true;
             this.checkBoxMidiChannel10.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel10.Location = new System.Drawing.Point(72, 64);
-            this.checkBoxMidiChannel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel10.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel10.Name = "checkBoxMidiChannel10";
             this.checkBoxMidiChannel10.Size = new System.Drawing.Size(28, 38);
             this.checkBoxMidiChannel10.TabIndex = 9;
@@ -744,7 +748,7 @@
             this.checkBoxMidiChannel9.Checked = true;
             this.checkBoxMidiChannel9.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel9.Location = new System.Drawing.Point(27, 64);
-            this.checkBoxMidiChannel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel9.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel9.Name = "checkBoxMidiChannel9";
             this.checkBoxMidiChannel9.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel9.TabIndex = 8;
@@ -759,7 +763,7 @@
             this.checkBoxMidiChannel8.Checked = true;
             this.checkBoxMidiChannel8.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel8.Location = new System.Drawing.Point(344, 18);
-            this.checkBoxMidiChannel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel8.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel8.Name = "checkBoxMidiChannel8";
             this.checkBoxMidiChannel8.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel8.TabIndex = 7;
@@ -774,7 +778,7 @@
             this.checkBoxMidiChannel7.Checked = true;
             this.checkBoxMidiChannel7.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel7.Location = new System.Drawing.Point(299, 18);
-            this.checkBoxMidiChannel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel7.Name = "checkBoxMidiChannel7";
             this.checkBoxMidiChannel7.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel7.TabIndex = 6;
@@ -789,7 +793,7 @@
             this.checkBoxMidiChannel6.Checked = true;
             this.checkBoxMidiChannel6.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel6.Location = new System.Drawing.Point(253, 18);
-            this.checkBoxMidiChannel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel6.Name = "checkBoxMidiChannel6";
             this.checkBoxMidiChannel6.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel6.TabIndex = 5;
@@ -804,7 +808,7 @@
             this.checkBoxMidiChannel5.Checked = true;
             this.checkBoxMidiChannel5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel5.Location = new System.Drawing.Point(208, 18);
-            this.checkBoxMidiChannel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel5.Name = "checkBoxMidiChannel5";
             this.checkBoxMidiChannel5.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel5.TabIndex = 4;
@@ -819,7 +823,7 @@
             this.checkBoxMidiChannel4.Checked = true;
             this.checkBoxMidiChannel4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel4.Location = new System.Drawing.Point(163, 18);
-            this.checkBoxMidiChannel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel4.Name = "checkBoxMidiChannel4";
             this.checkBoxMidiChannel4.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel4.TabIndex = 3;
@@ -834,7 +838,7 @@
             this.checkBoxMidiChannel3.Checked = true;
             this.checkBoxMidiChannel3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel3.Location = new System.Drawing.Point(117, 18);
-            this.checkBoxMidiChannel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel3.Name = "checkBoxMidiChannel3";
             this.checkBoxMidiChannel3.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel3.TabIndex = 2;
@@ -849,7 +853,7 @@
             this.checkBoxMidiChannel2.Checked = true;
             this.checkBoxMidiChannel2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel2.Location = new System.Drawing.Point(72, 18);
-            this.checkBoxMidiChannel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel2.Name = "checkBoxMidiChannel2";
             this.checkBoxMidiChannel2.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel2.TabIndex = 1;
@@ -864,7 +868,7 @@
             this.checkBoxMidiChannel1.Checked = true;
             this.checkBoxMidiChannel1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMidiChannel1.Location = new System.Drawing.Point(27, 18);
-            this.checkBoxMidiChannel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMidiChannel1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMidiChannel1.Name = "checkBoxMidiChannel1";
             this.checkBoxMidiChannel1.Size = new System.Drawing.Size(20, 38);
             this.checkBoxMidiChannel1.TabIndex = 0;
@@ -878,7 +882,7 @@
             this.comboBoxMidiDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMidiDevices.FormattingEnabled = true;
             this.comboBoxMidiDevices.Location = new System.Drawing.Point(373, 36);
-            this.comboBoxMidiDevices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxMidiDevices.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMidiDevices.Name = "comboBoxMidiDevices";
             this.comboBoxMidiDevices.Size = new System.Drawing.Size(371, 24);
             this.comboBoxMidiDevices.TabIndex = 16;
@@ -899,7 +903,7 @@
             // 
             this.checkBoxAutoSave.AutoSize = true;
             this.checkBoxAutoSave.Location = new System.Drawing.Point(861, 66);
-            this.checkBoxAutoSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxAutoSave.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAutoSave.Name = "checkBoxAutoSave";
             this.checkBoxAutoSave.Size = new System.Drawing.Size(95, 21);
             this.checkBoxAutoSave.TabIndex = 17;
@@ -909,7 +913,7 @@
             // textBoxMidiControlVol
             // 
             this.textBoxMidiControlVol.Location = new System.Drawing.Point(579, 70);
-            this.textBoxMidiControlVol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlVol.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlVol.Name = "textBoxMidiControlVol";
             this.textBoxMidiControlVol.Size = new System.Drawing.Size(36, 22);
             this.textBoxMidiControlVol.TabIndex = 18;
@@ -918,7 +922,7 @@
             // textBoxMidiControlTrack
             // 
             this.textBoxMidiControlTrack.Location = new System.Drawing.Point(799, 169);
-            this.textBoxMidiControlTrack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiControlTrack.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlTrack.Name = "textBoxMidiControlTrack";
             this.textBoxMidiControlTrack.Size = new System.Drawing.Size(55, 22);
             this.textBoxMidiControlTrack.TabIndex = 19;
@@ -927,7 +931,7 @@
             // textBoxMidiCommandReload
             // 
             this.textBoxMidiCommandReload.Location = new System.Drawing.Point(971, 69);
-            this.textBoxMidiCommandReload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMidiCommandReload.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiCommandReload.Name = "textBoxMidiCommandReload";
             this.textBoxMidiCommandReload.Size = new System.Drawing.Size(55, 22);
             this.textBoxMidiCommandReload.TabIndex = 20;
@@ -949,7 +953,7 @@
             this.button1.ImageIndex = 6;
             this.button1.ImageList = this.imageList1;
             this.button1.Location = new System.Drawing.Point(759, 32);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 32);
             this.button1.TabIndex = 23;
@@ -963,7 +967,7 @@
             this.button2.ImageIndex = 7;
             this.button2.ImageList = this.imageList1;
             this.button2.Location = new System.Drawing.Point(796, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 32);
             this.button2.TabIndex = 24;
@@ -981,11 +985,40 @@
             this.checkBoxLoop.UseVisualStyleBackColor = true;
             this.checkBoxLoop.CheckedChanged += new System.EventHandler(this.checkBoxLoop_CheckedChanged);
             // 
+            // checkBoxAutoPlay
+            // 
+            this.checkBoxAutoPlay.AutoSize = true;
+            this.checkBoxAutoPlay.Location = new System.Drawing.Point(628, 585);
+            this.checkBoxAutoPlay.Name = "checkBoxAutoPlay";
+            this.checkBoxAutoPlay.Size = new System.Drawing.Size(105, 21);
+            this.checkBoxAutoPlay.TabIndex = 26;
+            this.checkBoxAutoPlay.Text = "Auto Play in";
+            this.checkBoxAutoPlay.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(861, 586);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 17);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "seconds";
+            // 
+            // numericUpDownAutoPlay
+            // 
+            this.numericUpDownAutoPlay.Location = new System.Drawing.Point(735, 585);
+            this.numericUpDownAutoPlay.Name = "numericUpDownAutoPlay";
+            this.numericUpDownAutoPlay.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDownAutoPlay.TabIndex = 29;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 646);
+            this.Controls.Add(this.numericUpDownAutoPlay);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.checkBoxAutoPlay);
             this.Controls.Add(this.checkBoxLoop);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -1010,7 +1043,7 @@
             this.Controls.Add(this.buttonRefreshDevices);
             this.Controls.Add(this.comboBoxOutputDevices);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Duval Wave Player";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -1025,6 +1058,7 @@
             this.groupBox3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAutoPlay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1100,6 +1134,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBoxLoop;
+        private System.Windows.Forms.CheckBox checkBoxAutoPlay;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown numericUpDownAutoPlay;
     }
 }
 

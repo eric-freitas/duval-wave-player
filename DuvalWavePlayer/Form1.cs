@@ -24,6 +24,11 @@ namespace DuvalWavePlayer
             InitializeComponent();
         }
 
+
+        private DummyObjectOnlyForTrackingControl thisIsWhatIsIs = new DummyObjectOnlyForTrackingControl();
+        
+
+        private bool interruptAutoPlay = false;
         private PlayList CurrentPlaylist { get; set; } = null;
         private int playerDevice = 0;
         private long currentFileMaxLength = 0;
@@ -117,7 +122,7 @@ namespace DuvalWavePlayer
                     timerFileProgress.Stop();
                     if (!userStopped)
                     {
-                        buttonForward_Click(null, e);
+                        buttonForward_Click(thisIsWhatIsIs, e);
                     }
                 });
             }
@@ -211,7 +216,7 @@ namespace DuvalWavePlayer
 
             if (listBoxPlayList.Items.Count > 0)
             {
-                buttonForward_Click(null, null);
+                buttonForward_Click(this, null);
             }
         }
 
@@ -315,6 +320,11 @@ namespace DuvalWavePlayer
             textBoxMidiControlStop_TextChanged(sender, e);
             textBoxMidiControlTrack_TextChanged(sender, e);
             textBoxMidiControlVol_TextChanged(sender, e);
+
+
+            numericUpDownAutoPlay.Value = (ConfigurationManager.AppSettings["AutoPlay"] != null && int.TryParse(ConfigurationManager.AppSettings["AutoPlay"], out int _autoPlay) ? _autoPlay: 0);
+
+            checkBoxAutoPlay.Checked = numericUpDownAutoPlay.Value > 0;
 
 
             LoadPlaylist();
@@ -544,7 +554,11 @@ namespace DuvalWavePlayer
             config.AppSettings.Settings["MidiCommandReload"].Value = textBoxMidiCommandReload.Text;
 
 
-            
+            if (config.AppSettings.Settings["AutoPlay"] == null)
+            {
+                config.AppSettings.Settings.Add(new KeyValueConfigurationElement("AutoPlay", ""));
+            }
+            config.AppSettings.Settings["AutoPlay"].Value = checkBoxAutoPlay.Checked ? numericUpDownAutoPlay.Value.ToString() : "0";
 
             config.Save(ConfigurationSaveMode.Modified);
         }
@@ -772,6 +786,7 @@ namespace DuvalWavePlayer
         {
             /*timerAutoPlay.Stop();
             timerAutoPlay.Enabled = false;*/
+            interruptAutoPlay = true;
             userStopped = true;
             waveOutPlayer.Stop();
             trackBarFileProgress.Value = 0;
@@ -811,6 +826,8 @@ namespace DuvalWavePlayer
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            interruptAutoPlay = true;
+
             if (waveOutPlayer.PlaybackState != PlaybackState.Stopped)
             {
                 waveOutPlayer.Stop();
@@ -938,6 +955,7 @@ namespace DuvalWavePlayer
 
         private void buttonRewind_Click(object sender, EventArgs e)
         {
+            interruptAutoPlay = true;
             if (listBoxPlayList.Items.Count > 0)
             {
                 if (listBoxPlayList.SelectedIndex == 0)
@@ -971,7 +989,8 @@ namespace DuvalWavePlayer
 
         private void buttonForward_Click(object sender, EventArgs e)
         {
-            if (checkBoxLoop.Checked && sender != null && waveOutPlayer != null && waveOutPlayer.PlaybackState == PlaybackState.Playing && loop != null)
+            interruptAutoPlay = true;
+            if (checkBoxLoop.Checked && (sender != null) && waveOutPlayer != null && waveOutPlayer.PlaybackState == PlaybackState.Playing && loop != null)
             {
                 loop.goToNextFile = true;
                
@@ -1002,6 +1021,38 @@ namespace DuvalWavePlayer
                     }
 
                     listBoxPlayList_SelectedIndexChanged(sender, e);
+
+                    if (sender is DummyObjectOnlyForTrackingControl && checkBoxAutoPlay.Checked)
+                    {
+                        int loops = (int)numericUpDownAutoPlay.Value;
+                        labelAutoPlay.Text = "0";
+                        
+                        new Thread(() =>
+                        {
+                            int curLoop = 0;
+                            interruptAutoPlay = false;
+                            while (curLoop < loops)
+                            {
+                                if (interruptAutoPlay)
+                                {
+                                    return;
+                                }
+                                this.Invoke(new Action(() =>
+                                {
+                                    labelAutoPlay.Text = curLoop.ToString();
+                                }));
+                                curLoop++;
+                                Thread.Sleep(1000);
+                            }
+
+                            this.Invoke(new Action(() =>
+                            {
+                                labelAutoPlay.Text = "0";
+                                buttonPlay_Click(null, null);
+                            }));
+
+                        }).Start();
+                    }
 
                     /*if (sender != null && checkBoxAutoPlay.Checked && !(sender is MidiIn))
                     {
@@ -1544,6 +1595,12 @@ namespace DuvalWavePlayer
         {
             OnNextSongStarted(this, null);
         }
+    }
+
+
+    public class DummyObjectOnlyForTrackingControl
+    {
+
     }
 
 
