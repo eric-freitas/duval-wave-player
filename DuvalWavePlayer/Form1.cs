@@ -735,8 +735,9 @@ namespace DuvalWavePlayer
                 else
                 {
 
-                    mainOutputStream = new WaveFileReader(fileToPlay);
+                    /*mainOutputStream = new WaveFileReader(fileToPlay);
                     
+
 
                     WaveChannel32 volumeStream = new WaveChannel32(mainOutputStream);
                     volumeStream.PadWithZeroes = true;
@@ -745,7 +746,18 @@ namespace DuvalWavePlayer
                     //currentFileMaxLength = (long)((mainOutputStream.Length / (mainOutputStream.WaveFormat.BitsPerSample / 8 ) / mainOutputStream.WaveFormat.SampleRate) / mainOutputStream.WaveFormat.Channels);
 
                     //labelMaxLength.Text = TimeSpan.FromSeconds(currentFileMaxLength).ToString(@"mm\:ss");
-                    currentOutputStream = mainOutputStream;
+                    currentOutputStream = mainOutputStream;*/
+
+                    mainOutputStream = new WaveFileReader(fileToPlay);
+
+                    MemoryStream audioData = new MemoryStream(File.ReadAllBytes(fileToPlay));
+                    RawSourceWaveStream waveStream = new RawSourceWaveStream(audioData, mainOutputStream.WaveFormat);
+                    mainOutputStream.Close();
+                    waveOutPlayer.Init(waveStream);
+                    currentOutputStream = waveStream;
+                    mainOutputStream = currentOutputStream;
+
+
                     SetTrackPosition();
 
                     
