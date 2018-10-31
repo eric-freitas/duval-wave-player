@@ -137,7 +137,7 @@
             this.buttonRefreshDevices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonRefreshDevices.ImageIndex = 0;
             this.buttonRefreshDevices.ImageList = this.imageList1;
-            this.buttonRefreshDevices.Location = new System.Drawing.Point(979, 31);
+            this.buttonRefreshDevices.Location = new System.Drawing.Point(983, 31);
             this.buttonRefreshDevices.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRefreshDevices.Name = "buttonRefreshDevices";
             this.buttonRefreshDevices.Size = new System.Drawing.Size(33, 31);
@@ -169,7 +169,7 @@
             this.buttonSaveConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSaveConfig.ImageIndex = 1;
             this.buttonSaveConfig.ImageList = this.imageList1;
-            this.buttonSaveConfig.Location = new System.Drawing.Point(1020, 31);
+            this.buttonSaveConfig.Location = new System.Drawing.Point(1024, 31);
             this.buttonSaveConfig.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSaveConfig.Name = "buttonSaveConfig";
             this.buttonSaveConfig.Size = new System.Drawing.Size(35, 32);
@@ -181,7 +181,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(963, 11);
+            this.label2.Location = new System.Drawing.Point(967, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 17);
@@ -208,7 +208,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(549, 433);
+            this.groupBox1.Size = new System.Drawing.Size(553, 439);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Playlist";
@@ -219,7 +219,7 @@
             this.buttonMoveU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMoveU.ImageIndex = 12;
             this.buttonMoveU.ImageList = this.imageList1;
-            this.buttonMoveU.Location = new System.Drawing.Point(232, 16);
+            this.buttonMoveU.Location = new System.Drawing.Point(236, 16);
             this.buttonMoveU.Margin = new System.Windows.Forms.Padding(4);
             this.buttonMoveU.Name = "buttonMoveU";
             this.buttonMoveU.Size = new System.Drawing.Size(35, 32);
@@ -233,7 +233,7 @@
             this.buttonDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDown.ImageIndex = 11;
             this.buttonDown.ImageList = this.imageList1;
-            this.buttonDown.Location = new System.Drawing.Point(189, 16);
+            this.buttonDown.Location = new System.Drawing.Point(193, 16);
             this.buttonDown.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(35, 32);
@@ -247,7 +247,7 @@
             this.buttonDeleteFromPlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDeleteFromPlaylist.ImageIndex = 10;
             this.buttonDeleteFromPlaylist.ImageList = this.imageList1;
-            this.buttonDeleteFromPlaylist.Location = new System.Drawing.Point(336, 16);
+            this.buttonDeleteFromPlaylist.Location = new System.Drawing.Point(340, 16);
             this.buttonDeleteFromPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDeleteFromPlaylist.Name = "buttonDeleteFromPlaylist";
             this.buttonDeleteFromPlaylist.Size = new System.Drawing.Size(35, 32);
@@ -261,7 +261,7 @@
             this.buttonAddFileToPlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddFileToPlaylist.ImageIndex = 2;
             this.buttonAddFileToPlaylist.ImageList = this.imageList1;
-            this.buttonAddFileToPlaylist.Location = new System.Drawing.Point(379, 16);
+            this.buttonAddFileToPlaylist.Location = new System.Drawing.Point(383, 16);
             this.buttonAddFileToPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddFileToPlaylist.Name = "buttonAddFileToPlaylist";
             this.buttonAddFileToPlaylist.Size = new System.Drawing.Size(35, 32);
@@ -275,7 +275,7 @@
             this.buttonOpenPlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOpenPlaylist.ImageIndex = 3;
             this.buttonOpenPlaylist.ImageList = this.imageList1;
-            this.buttonOpenPlaylist.Location = new System.Drawing.Point(421, 16);
+            this.buttonOpenPlaylist.Location = new System.Drawing.Point(425, 16);
             this.buttonOpenPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpenPlaylist.Name = "buttonOpenPlaylist";
             this.buttonOpenPlaylist.Size = new System.Drawing.Size(35, 32);
@@ -289,7 +289,7 @@
             this.buttonSavePlaylistAs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSavePlaylistAs.ImageIndex = 4;
             this.buttonSavePlaylistAs.ImageList = this.imageList1;
-            this.buttonSavePlaylistAs.Location = new System.Drawing.Point(464, 16);
+            this.buttonSavePlaylistAs.Location = new System.Drawing.Point(468, 16);
             this.buttonSavePlaylistAs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSavePlaylistAs.Name = "buttonSavePlaylistAs";
             this.buttonSavePlaylistAs.Size = new System.Drawing.Size(35, 32);
@@ -303,7 +303,7 @@
             this.buttonSavePlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSavePlaylist.ImageIndex = 1;
             this.buttonSavePlaylist.ImageList = this.imageList1;
-            this.buttonSavePlaylist.Location = new System.Drawing.Point(507, 16);
+            this.buttonSavePlaylist.Location = new System.Drawing.Point(511, 16);
             this.buttonSavePlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSavePlaylist.Name = "buttonSavePlaylist";
             this.buttonSavePlaylist.Size = new System.Drawing.Size(35, 32);
@@ -318,7 +318,7 @@
             this.textBoxPlaylistName.Location = new System.Drawing.Point(8, 55);
             this.textBoxPlaylistName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPlaylistName.Name = "textBoxPlaylistName";
-            this.textBoxPlaylistName.Size = new System.Drawing.Size(532, 22);
+            this.textBoxPlaylistName.Size = new System.Drawing.Size(536, 22);
             this.textBoxPlaylistName.TabIndex = 2;
             // 
             // label3
@@ -342,7 +342,7 @@
             this.listBoxPlayList.Location = new System.Drawing.Point(8, 87);
             this.listBoxPlayList.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPlayList.Name = "listBoxPlayList";
-            this.listBoxPlayList.Size = new System.Drawing.Size(532, 324);
+            this.listBoxPlayList.Size = new System.Drawing.Size(536, 324);
             this.listBoxPlayList.TabIndex = 0;
             this.listBoxPlayList.SelectedIndexChanged += new System.EventHandler(this.listBoxPlayList_SelectedIndexChanged);
             this.listBoxPlayList.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBoxPlayList_DragDrop);
@@ -379,17 +379,18 @@
             this.groupBox2.Controls.Add(this.buttonPause);
             this.groupBox2.Controls.Add(this.buttonStop);
             this.groupBox2.Controls.Add(this.buttonPlay);
-            this.groupBox2.Location = new System.Drawing.Point(21, 511);
+            this.groupBox2.Location = new System.Drawing.Point(21, 517);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(549, 119);
+            this.groupBox2.Size = new System.Drawing.Size(553, 119);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
             // textBoxMidiControlForth
             // 
-            this.textBoxMidiControlForth.Location = new System.Drawing.Point(473, 87);
+            this.textBoxMidiControlForth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMidiControlForth.Location = new System.Drawing.Point(479, 87);
             this.textBoxMidiControlForth.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlForth.Name = "textBoxMidiControlForth";
             this.textBoxMidiControlForth.Size = new System.Drawing.Size(63, 22);
@@ -398,7 +399,8 @@
             // 
             // textBoxMidiControlBack
             // 
-            this.textBoxMidiControlBack.Location = new System.Drawing.Point(401, 87);
+            this.textBoxMidiControlBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMidiControlBack.Location = new System.Drawing.Point(407, 87);
             this.textBoxMidiControlBack.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlBack.Name = "textBoxMidiControlBack";
             this.textBoxMidiControlBack.Size = new System.Drawing.Size(63, 22);
@@ -438,7 +440,7 @@
             this.buttonRewind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonRewind.ImageIndex = 9;
             this.buttonRewind.ImageList = this.imageList1;
-            this.buttonRewind.Location = new System.Drawing.Point(401, 21);
+            this.buttonRewind.Location = new System.Drawing.Point(405, 21);
             this.buttonRewind.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRewind.Name = "buttonRewind";
             this.buttonRewind.Size = new System.Drawing.Size(64, 58);
@@ -452,7 +454,7 @@
             this.buttonForward.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonForward.ImageIndex = 8;
             this.buttonForward.ImageList = this.imageList1;
-            this.buttonForward.Location = new System.Drawing.Point(473, 21);
+            this.buttonForward.Location = new System.Drawing.Point(477, 21);
             this.buttonForward.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForward.Name = "buttonForward";
             this.buttonForward.Size = new System.Drawing.Size(64, 58);
@@ -503,12 +505,12 @@
             // 
             this.trackBarVolume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarVolume.Location = new System.Drawing.Point(575, 113);
+            this.trackBarVolume.Location = new System.Drawing.Point(581, 97);
             this.trackBarVolume.Margin = new System.Windows.Forms.Padding(4);
             this.trackBarVolume.Maximum = 100;
             this.trackBarVolume.Name = "trackBarVolume";
             this.trackBarVolume.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBarVolume.Size = new System.Drawing.Size(56, 518);
+            this.trackBarVolume.Size = new System.Drawing.Size(56, 524);
             this.trackBarVolume.TabIndex = 7;
             this.trackBarVolume.Value = 90;
             this.trackBarVolume.Scroll += new System.EventHandler(this.trackBarVolume_Scroll);
@@ -516,7 +518,7 @@
             // trackBarFileProgress
             // 
             this.trackBarFileProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarFileProgress.Location = new System.Drawing.Point(609, 114);
+            this.trackBarFileProgress.Location = new System.Drawing.Point(613, 114);
             this.trackBarFileProgress.Margin = new System.Windows.Forms.Padding(4);
             this.trackBarFileProgress.Maximum = 100;
             this.trackBarFileProgress.Name = "trackBarFileProgress";
@@ -535,7 +537,7 @@
             this.labelMusicName.AutoSize = true;
             this.labelMusicName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMusicName.ForeColor = System.Drawing.Color.Green;
-            this.labelMusicName.Location = new System.Drawing.Point(616, 86);
+            this.labelMusicName.Location = new System.Drawing.Point(620, 86);
             this.labelMusicName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMusicName.Name = "labelMusicName";
             this.labelMusicName.Size = new System.Drawing.Size(18, 25);
@@ -546,7 +548,7 @@
             // 
             this.labelTimespan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTimespan.AutoSize = true;
-            this.labelTimespan.Location = new System.Drawing.Point(621, 172);
+            this.labelTimespan.Location = new System.Drawing.Point(625, 172);
             this.labelTimespan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTimespan.Name = "labelTimespan";
             this.labelTimespan.Size = new System.Drawing.Size(12, 17);
@@ -557,7 +559,7 @@
             // 
             this.labelMaxLength.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMaxLength.AutoSize = true;
-            this.labelMaxLength.Location = new System.Drawing.Point(976, 172);
+            this.labelMaxLength.Location = new System.Drawing.Point(980, 172);
             this.labelMaxLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMaxLength.Name = "labelMaxLength";
             this.labelMaxLength.Size = new System.Drawing.Size(12, 17);
@@ -570,7 +572,7 @@
             this.labelAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAutoPlay.AutoSize = true;
             this.labelAutoPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAutoPlay.Location = new System.Drawing.Point(1026, 582);
+            this.labelAutoPlay.Location = new System.Drawing.Point(1030, 588);
             this.labelAutoPlay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAutoPlay.Name = "labelAutoPlay";
             this.labelAutoPlay.Size = new System.Drawing.Size(28, 29);
@@ -584,11 +586,11 @@
             this.groupBox3.Controls.Add(this.panelMidiLed);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.panel1);
-            this.groupBox3.Location = new System.Drawing.Point(625, 364);
+            this.groupBox3.Location = new System.Drawing.Point(629, 364);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(429, 214);
+            this.groupBox3.Size = new System.Drawing.Size(429, 220);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Midi";
@@ -878,13 +880,15 @@
             // 
             // comboBoxMidiDevices
             // 
+            this.comboBoxMidiDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxMidiDevices.DisplayMember = "ProductName";
             this.comboBoxMidiDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMidiDevices.FormattingEnabled = true;
             this.comboBoxMidiDevices.Location = new System.Drawing.Point(373, 36);
             this.comboBoxMidiDevices.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMidiDevices.Name = "comboBoxMidiDevices";
-            this.comboBoxMidiDevices.Size = new System.Drawing.Size(371, 24);
+            this.comboBoxMidiDevices.Size = new System.Drawing.Size(386, 24);
             this.comboBoxMidiDevices.TabIndex = 16;
             this.comboBoxMidiDevices.ValueMember = "ProductId";
             this.comboBoxMidiDevices.SelectedIndexChanged += new System.EventHandler(this.comboBoxMidiDevices_SelectedIndexChanged);
@@ -901,8 +905,9 @@
             // 
             // checkBoxAutoSave
             // 
+            this.checkBoxAutoSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxAutoSave.AutoSize = true;
-            this.checkBoxAutoSave.Location = new System.Drawing.Point(861, 66);
+            this.checkBoxAutoSave.Location = new System.Drawing.Point(876, 66);
             this.checkBoxAutoSave.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAutoSave.Name = "checkBoxAutoSave";
             this.checkBoxAutoSave.Size = new System.Drawing.Size(95, 21);
@@ -912,6 +917,7 @@
             // 
             // textBoxMidiControlVol
             // 
+            this.textBoxMidiControlVol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMidiControlVol.Location = new System.Drawing.Point(579, 70);
             this.textBoxMidiControlVol.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiControlVol.Name = "textBoxMidiControlVol";
@@ -930,7 +936,8 @@
             // 
             // textBoxMidiCommandReload
             // 
-            this.textBoxMidiCommandReload.Location = new System.Drawing.Point(971, 69);
+            this.textBoxMidiCommandReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMidiCommandReload.Location = new System.Drawing.Point(986, 69);
             this.textBoxMidiCommandReload.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMidiCommandReload.Name = "textBoxMidiCommandReload";
             this.textBoxMidiCommandReload.Size = new System.Drawing.Size(55, 22);
@@ -938,8 +945,9 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(779, 15);
+            this.label6.Location = new System.Drawing.Point(794, 15);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 17);
@@ -952,7 +960,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ImageIndex = 6;
             this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(759, 32);
+            this.button1.Location = new System.Drawing.Point(763, 32);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 32);
@@ -966,7 +974,7 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.ImageIndex = 7;
             this.button2.ImageList = this.imageList1;
-            this.button2.Location = new System.Drawing.Point(796, 32);
+            this.button2.Location = new System.Drawing.Point(800, 32);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 32);
@@ -987,8 +995,9 @@
             // 
             // checkBoxAutoPlay
             // 
+            this.checkBoxAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxAutoPlay.AutoSize = true;
-            this.checkBoxAutoPlay.Location = new System.Drawing.Point(628, 585);
+            this.checkBoxAutoPlay.Location = new System.Drawing.Point(632, 599);
             this.checkBoxAutoPlay.Name = "checkBoxAutoPlay";
             this.checkBoxAutoPlay.Size = new System.Drawing.Size(105, 21);
             this.checkBoxAutoPlay.TabIndex = 26;
@@ -997,8 +1006,9 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(861, 586);
+            this.label7.Location = new System.Drawing.Point(865, 600);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 17);
             this.label7.TabIndex = 28;
@@ -1006,7 +1016,8 @@
             // 
             // numericUpDownAutoPlay
             // 
-            this.numericUpDownAutoPlay.Location = new System.Drawing.Point(735, 585);
+            this.numericUpDownAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDownAutoPlay.Location = new System.Drawing.Point(739, 599);
             this.numericUpDownAutoPlay.Name = "numericUpDownAutoPlay";
             this.numericUpDownAutoPlay.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownAutoPlay.TabIndex = 29;
@@ -1015,7 +1026,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 646);
+            this.ClientSize = new System.Drawing.Size(1075, 652);
             this.Controls.Add(this.numericUpDownAutoPlay);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBoxAutoPlay);
