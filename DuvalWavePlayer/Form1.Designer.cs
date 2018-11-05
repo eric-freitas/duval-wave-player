@@ -101,6 +101,7 @@
             this.checkBoxAutoPlay = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDownAutoPlay = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxPlayNext = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).BeginInit();
@@ -1022,11 +1023,23 @@
             this.numericUpDownAutoPlay.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownAutoPlay.TabIndex = 29;
             // 
+            // checkBoxPlayNext
+            // 
+            this.checkBoxPlayNext.AutoSize = true;
+            this.checkBoxPlayNext.Location = new System.Drawing.Point(625, 241);
+            this.checkBoxPlayNext.Name = "checkBoxPlayNext";
+            this.checkBoxPlayNext.Size = new System.Drawing.Size(119, 21);
+            this.checkBoxPlayNext.TabIndex = 30;
+            this.checkBoxPlayNext.Text = "Auto play next";
+            this.checkBoxPlayNext.UseVisualStyleBackColor = true;
+            this.checkBoxPlayNext.CheckedChanged += new System.EventHandler(this.checkBoxPlayNext_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 652);
+            this.Controls.Add(this.checkBoxPlayNext);
             this.Controls.Add(this.numericUpDownAutoPlay);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBoxAutoPlay);
@@ -1148,6 +1161,7 @@
         private System.Windows.Forms.CheckBox checkBoxAutoPlay;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDownAutoPlay;
+        private System.Windows.Forms.CheckBox checkBoxPlayNext;
     }
 }
 

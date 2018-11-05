@@ -703,10 +703,10 @@ namespace DuvalWavePlayer
                 labelMusicName.Text = filePlaying.Label;
                 currentFilePlaying = fileToPlay;
 
-                if (checkBoxLoop.Checked)
+                if (checkBoxLoop.Checked || checkBoxPlayNext.Checked)
                 {
-                    List<String> files = new List<string>();
-                    files.Add(fileToPlay);
+                    List<PlayListFile> files = new List<PlayListFile>();
+                    files.Add(filePlaying);
 
                     loopReader = new WaveFileReader(fileToPlay);
                     if (listBoxPlayList.Items.Count > 0)
@@ -716,8 +716,8 @@ namespace DuvalWavePlayer
                         while (nextIndex < listBoxPlayList.Items.Count)
                         {
                             nextPlayListFile = (PlayListFile)listBoxPlayList.Items[nextIndex];
-                            files.Add(nextPlayListFile.FileName);
-                            if (!nextPlayListFile.InLoop)
+                            files.Add(nextPlayListFile);
+                            if (!nextPlayListFile.InLoop && !nextPlayListFile.AutoPlayNext)
                             {
                                 break;
                             }
@@ -897,6 +897,7 @@ namespace DuvalWavePlayer
                 }
 
                 checkBoxLoop.Checked = filePlaying.InLoop;
+                checkBoxPlayNext.Checked = filePlaying.AutoPlayNext;
 
             }
         }
@@ -1473,6 +1474,14 @@ namespace DuvalWavePlayer
                 filePlaying.InLoop = checkBoxLoop.Checked;
             }
         }
+
+        private void checkBoxPlayNext_CheckedChanged(object sender, EventArgs e)
+        {
+            if (filePlaying != null)
+            {
+                filePlaying.AutoPlayNext = checkBoxPlayNext.Checked;
+            }
+        }
     }
 
     public class LoopStream : WaveStream
@@ -1491,17 +1500,22 @@ namespace DuvalWavePlayer
              this.nextFile = nextFile;
          }*/
 
-        public LoopStream(List<String> files)
+        private List<PlayListFile> filesToPlay;
+
+        public LoopStream(List<PlayListFile> files)
         {
             //this.sourceStream = sourceStream;
             if (files.Count == 0)
             {
                 return;
             }
+
+            filesToPlay = files;
+
             this.EnableLooping = true;
             //this.nextFile = nextFile;
 
-            foreach (String file in files)
+            foreach (String file in files.Select(_data => _data.FileName))
             {
                 fileList.Add(new WaveFileReader(file));
             }
@@ -1557,7 +1571,7 @@ namespace DuvalWavePlayer
         {
             int totalBytesRead = 0;
             bool changeAtNextLoop = false;
-
+            
             while (totalBytesRead < count)
             {
                 if (changeAtNextLoop)
@@ -1576,6 +1590,7 @@ namespace DuvalWavePlayer
                     }
                 }
 
+
                 int bytesRead = sourceStream.Read(buffer, offset + totalBytesRead, count - totalBytesRead);
 
                 if (bytesRead == 0)
@@ -1592,7 +1607,7 @@ namespace DuvalWavePlayer
                     sourceStream.Position = 0;
                 }
 
-                if ((sourceStream.Position + buffer.Length >= sourceStream.Length && goToNextFile))
+                if ((sourceStream.Position + buffer.Length >= sourceStream.Length && (goToNextFile || filesToPlay[curFileIndex].AutoPlayNext)))
                 {
                     changeAtNextLoop = true;
                 }

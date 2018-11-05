@@ -16,6 +16,7 @@ namespace DuvalWavePlayer
         public int? Volume { get; set; } = null;
 
         public bool InLoop { get; set; } = false;
+        public bool AutoPlayNext { get; set; } = false;
         
     }
 
